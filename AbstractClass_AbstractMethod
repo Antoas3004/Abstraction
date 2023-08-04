@@ -1,0 +1,18 @@
+//abstract method with abstract class
+// absttract class can have a abstract method and non abstarct method
+abstract class bike {
+	abstract void duke();
+}
+
+//abstract method implemented in child class(normal class)
+public class AbstractClass_AbstractMethod {
+	void duke() {
+		System.out.println("200 cc bike");
+	}
+
+	public static void main(String[] args) {
+		AbstractClass_AbstractMethod a = new AbstractClass_AbstractMethod();
+		a.duke();
+
+	}
+}
