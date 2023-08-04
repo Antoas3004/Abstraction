@@ -1,0 +1,26 @@
+abstract class bank { // abstract class
+	bank() {
+		System.out.println("created account");
+	}
+
+	abstract void credit(); // abstract meethod
+
+	void debit() { // non abstarct method
+		System.out.println("your amount debit");
+	}
+}
+
+class Sbi extends bank { // class extends abstract class
+	void credit() { // abstract ,eethod implement hear
+		System.out.println("amount credit");
+	}
+}
+
+public class Test_Abstraction {
+
+	public static void main(String[] args) {
+		Sbi a = new Sbi();
+		a.debit();
+		a.credit();
+	}
+}
