@@ -1,0 +1,19 @@
+//abstarct class 
+
+abstract class laptop {// parent abstract class
+	// abstarct class can hava a implimented method
+	void dell() {
+		System.out.println("good laptop");
+	}
+}
+
+public class Abstract_class extends laptop {
+	// abstract class cant create object
+	// so this abstarct class inheritated by child class
+
+	public static void main(String[] args) {
+		laptop ob = new Abstract_class();
+		ob.dell();
+
+	}
+}
